@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href=".//Assets/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Code Quiz</title>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-light bg-light" id="wholeNav">
+      <a class="navbar-brand" id="viewHS" href="./highscore.html"
+        >View Highscores</a
+      >
+
+      <p id="timerP">Time : <span id="countdown">0</span></p>
+    </nav>
+
+    <div class="container">
+      <div class="main">
+        <div>
+          <h1 id="header">Coding Quiz Challenge</h1>
+        </div>
+
+        <br />
+
+        <div>
+          <div class="questionDiv">
+            <p id="startPage">
+              Try to answer the following code-related questions within the time
+              Wrong answers will penalize your
+              scoretime by 10 seconds.
+            </p>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-light" id="startBtn">
+          Start Quiz
+        </button>
+      </div>
+
+      <div class="answerBtns">
+        <div class="btn-group-vertical hide ansBtn">
+          <button type="button" class="btn answerBtn" id="answerBtn1" value="1">
+            1.
+          </button>
+          <button type="button" class="btn answerBtn" id="answerBtn2" value="2">
+            2.
+          </button>
+          <button type="button" class="btn answerBtn" id="answerBtn3" value="3">
+            3.
+          </button>
+          <button type="button" class="btn answerBtn" id="answerBtn4" value="4">
+            4.
+          </button>
+        </div>
+      </div>
+
+      <div id="correctWrong">
+        <h5 id="correct_wrong"></h5>
+      </div>
+    </div>
+
+    <script src="./Develop/script.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
