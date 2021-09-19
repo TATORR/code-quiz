@@ -40,3 +40,36 @@ function startGame() {
     ansBtn.classList.remove('hide');
     updatedisplay();
 }
+
+// Timer Starts and I am presented with a question
+function timestart(event) {
+    event.preventdefault();
+    let timeLeft = 60;
+    timerEL.textContent=timeLeft;
+    let timeInterval = setInterval(() => {
+        timerEL.textContent = timeLeft;
+        timeLeft--;
+        if (timeLeft < 0) {
+            timerEL.textContent = "0";
+            console.log("Game Over!")
+            clearInterval(timeInterval);
+        }
+    }, 1000);
+}
+
+let questionCounter = 0;
+function updateDisplay() {
+    console.log(quizQA[questionCounter].question);
+    headerEl.textContent = quizQA[questionCounter].question;
+    answerBtn.textContent = quizQA[questionCounter].choices[0];
+    answerBtn2.textContent = quizQA[questionCounter].choices[1];
+    answerBtn3.textContent = quizQA[questionCounter].choices[2];
+    answerBtn4.textContent = quizQA[questionCounter].choices[3];
+  }
+
+
+startBtn.addEventListener("click", function () {
+    startBtn.classList.add("hide");
+    startPage.classList.add("hide");
+    startGame();
+});
