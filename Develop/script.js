@@ -1,5 +1,5 @@
 let startBtn = document.querySelector("#startBtn");
-let answerBtn = document.querySelector("#answerBtn1");
+let answerBtn = document.querySelector("#answerBtn");
 let answerBtn2 = document.querySelector("#answerBtn2");
 let answerBtn3 = document.querySelector("#answerBtn3");
 let answerBtn4 = document.querySelector("#AnswerBtn4");
